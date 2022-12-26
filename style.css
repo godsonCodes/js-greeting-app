@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap');
+
+*{
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0; padding: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+main{
+    border: .1rem solid #ccc;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2);
+    width: 50rem;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+header h1{
+    font-size: 3rem;
+    color: #cc00cc;
+}
+
+header .fa-close{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+header .fa-close:hover{
+    color: #cc00cc;
+}
+
+.input-details.active{
+    display: none;
+}
+
+label{
+    display: block;
+    margin-bottom: .5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+input{
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    border-radius: .5rem;
+    border: .2rem solid #cc00cc;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons a{
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background: #fff;
+    color: #000;
+    border: .1rem solid #000;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.buttons .submit-btn,
+.buttons .proceed-btn{
+    background: #fff;
+    border: .1rem solid #cc00cc;
+    color: #cc00cc;
+}
+
+.buttons .submit-btn:hover,
+.buttons .proceed-btn:hover{
+    background: #cc00cc;
+    color: #fff;
+}
+
+
+.buttons .clear-btn:hover,
+.buttons .back-btn:hover{
+    background: #000;
+    color: #fff;
+    border: .1rem solid #000;
+}
+
+.message{
+    border: .1rem solid #ccc;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2);
+    width: 50rem;
+    text-align: center;
+    color: #cc00cc;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.message h2{
+    font-size: 4rem;
+}
+
+.message.active{
+    display: block;
+}
+
+.message h2{
+    margin: 2rem 0;
+}
